@@ -10,14 +10,28 @@
     <header id="Navigation">
         <h3 id="logo">Put logo</h3>
         <nav id="Navigation_1">
-            <a href="#">Lihat hasil</a>
-            <a href="#">Lihat rumus</a>
+            <button class="my-button" onclick="konversiSuhu()">Konversi</button>
+            <button class="my-button" onclick="rumus()">Rumus</button>
         </nav>
     </header>
+
     <div class="input-section">
-        <label for="input-field">Celcius</label>
-        <input type="number" class="input-field">
+        <label for="input-field" style="margin-bottom: 30px;">Celsius</label>
+        <input type="number" id="input-field" class="input-field">
     </div>
-    <button class="my-button">Konversi</button>
+
+    <br><br><br>
+    
+    <div class="input-section">
+        <label for="input-field" id="hasil-konversi" style="margin-bottom: 30px;">Hasil Konversi:</label>
+        <label class="input-field" id="hasil-fahrenheit"></label>
+    </div>
+
+    <div class="input-section">
+        <label for="input-field" id="Rumus" style="margin-bottom: 30px;">Hasil rumus</label>
+        <label class="input-field" id="rumusResult"></label>
+    </div>
+
+   <script src="js/index.js"></script>
 </body>
 </html>
